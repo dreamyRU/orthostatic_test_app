@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Results">
+
+    <TextView
+        style="@style/HeaderStyle"
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Результаты теста"
+        android:textSize="22sp"
+        android:textColor="@color/red" />
+
+    <TextView
+        style="@style/HeaderStyle"
+        android:id="@+id/result_description"
+        android:textAlignment="center"
+        android:layout_marginVertical="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_marginVertical="20dp"
+            android:id="@+id/metrics_smile_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/awesome_condition"
+            android:layout_weight="0.3"/>
+        <TextView
+            style="@style/HeaderStyle"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:id="@+id/metrics_description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3" />
+        <ImageView
+            android:id="@+id/metrics_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:src="@drawable/percent_100"/>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
